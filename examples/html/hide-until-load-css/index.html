@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <title>Hide content until loaded with CSS</title>
+    <style type="text/css">
+      .hide-single-child > :only-child {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class='hide-single-child'>
+      <div>
+        <h1>Content Hidden</h1>
+        <script>
+          alert('Note that content is hidden until you click "Ok".');
+        </script>
+      </div>
+      <div></div>
+    </div>
+  </body>
+
+</html>
+
+<!--
+vi:ts=2 sw=2 et:
+-->
